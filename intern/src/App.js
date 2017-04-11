@@ -10,7 +10,7 @@ class CurrencyRecord extends React.Component {
                 pair_symbol: props.data.pair_symbol,
                 offer_bigfigure: props.data.offer_bigfigure,
                 offer_points: props.data.offer_points,
-                change: 'none'
+                change: 'Syncing'
             }
         }
     }
@@ -20,10 +20,11 @@ class CurrencyRecord extends React.Component {
             nextProps.data.change = 'UP';
             this.setState({ data: nextProps.data });
         }
-        else {
+        else{
             nextProps.data.change = 'DOWN';
             this.setState({ data: nextProps.data });
         }
+       
     }
     render() {
 
@@ -31,23 +32,23 @@ class CurrencyRecord extends React.Component {
         if (this.state.data.change === 'DOWN') {
             tr_id = 'TR_Down';
         }
-        else {
+        else{
             tr_id = 'TR_Up';
         }
 
         return (
             <tr className={tr_id}>
                 <td>
-                    {this.state.data.pair_symbol.toString()}
+                    {this.state.data.pair_symbol}
                 </td>
                 <td>
-                    {this.state.data.offer_bigfigure.toString()}
+                    {parseFloat(this.state.data.offer_bigfigure)}
                 </td>
                 <td id={tr_id}>
-                    {this.state.data.offer_points.toString()}
+                    {parseFloat(this.state.data.offer_points)}
                 </td>
                 <td>
-                    {this.state.data.change.toString()}
+                    {this.state.data.change}
                 </td>
             </tr>
 
