@@ -1,0 +1,19 @@
+table,thead {
+   border: 5px solid black;
+   border-radius: 10px;
+}
+
+
+.TR_Up{
+  border: 5px solid black;
+  border-radius: 10px;
+  background: green;
+  text-align: center;
+}
+
+.TR_Down{
+  border: 5px solid black;
+  border-radius: 10px;
+  background: red;
+  text-align: center;
+}

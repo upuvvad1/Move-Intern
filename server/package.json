@@ -1,0 +1,17 @@
+{
+  "name": "intern-server",
+  "version": "1.0.0",
+  "description": "Server to read data from webrates.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Udaya Puvvadi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {}
+}
