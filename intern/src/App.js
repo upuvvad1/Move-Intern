@@ -82,7 +82,7 @@ class LoadCurrencyFeed extends React.Component {
 
     componentDidMount() {
         this.fetchData();
-        this.timerID = setInterval(() => this.fetchData(), 1000);
+        this.timerID = setInterval(() => this.fetchData(), 20000);
     }
 
     fetchData() {
