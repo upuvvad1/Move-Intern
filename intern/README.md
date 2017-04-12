@@ -4,12 +4,15 @@ This project has the following dependencies.
 
 React, Reactdom, ReactScripts,Axios
 
+From the terminal.
+
 Setup:
 
-npm install react react-dom react-scripts axios
+	npm install react react-dom react-scripts axios
 
 Run:
-npm start
+
+	npm start
 
 
 Note: This reactJS application must be started after running the server.
